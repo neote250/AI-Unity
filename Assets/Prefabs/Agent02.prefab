@@ -127,6 +127,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 313b2996a50efa844842ddf9628345a5, type: 2}
   seekPerception: {fileID: 9004298148807537356}
   fleePerception: {fileID: 0}
+  flockPerception: {fileID: 0}
 --- !u!114 &9004298148807537356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ad226748b13b54db401f63420b7d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  description: Chase agent01
   tagName: Agent01
   maxDistance: 5
   maxAngle: 180
