@@ -63,7 +63,7 @@ MonoBehaviour:
   movement: {fileID: 1466252995776257954}
   data: {fileID: 11400000, guid: 33308c23b033bc9488a3f190fb72ef79, type: 2}
   seekPerception: {fileID: 0}
-  fleePerception: {fileID: 0}
+  fleePerception: {fileID: 2666129085677828759}
   flockPerception: {fileID: -4281274054413091494}
   obstaclePerception: {fileID: -4192051787325206076}
 --- !u!114 &-4281274054413091494
@@ -78,9 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ad226748b13b54db401f63420b7d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 'Flock
-
-    Flee agent02'
+  description: Flock
   tagName: Agent01
   maxDistance: 5
   maxAngle: 150
@@ -99,9 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ad226748b13b54db401f63420b7d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
+  description: Flee
   tagName: Agent02
-  maxDistance: 5
+  maxDistance: 20
   maxAngle: 180
   layerMask:
     serializedVersion: 2

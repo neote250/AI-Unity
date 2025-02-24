@@ -16,8 +16,9 @@ GameObject:
   - component: {fileID: 520939518230976009}
   - component: {fileID: 4957428320970074675}
   - component: {fileID: 459093207319154894}
+  - component: {fileID: 2402911392911830039}
   m_Layer: 0
-  m_Name: StateAgent
+  m_Name: StateAgent02
   m_TagString: Agent02
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,6 +129,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 4957428320970074675}
   perception: {fileID: 459093207319154894}
+  timer:
+    value: 0
+  health:
+    value: 5
+  destinationDistance:
+    value: 0
+  enemyDistance:
+    value: 0
+  enemySeen:
+    value: 0
+  enemy: {fileID: 4965963220826220543, guid: b7e7f4e2db7a9fe4fb276eeaa8563e76, type: 3}
 --- !u!195 &520939518230976009
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -178,9 +190,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Seek Agent01
   tagName: Agent01
-  maxDistance: 5
+  maxDistance: 20
   maxAngle: 90
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   numRaycast: 7
+--- !u!54 &2402911392911830039
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027484735902836217}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
